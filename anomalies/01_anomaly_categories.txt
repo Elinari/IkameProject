@@ -1,0 +1,35 @@
+########################################################
+##### Written by Elinari for the IKAME Project Mod #####
+########################################################
+
+#IKAME Category
+anomaly_category = {
+	
+	key = meet_boss   # Title loc 
+	desc = meet_boss_desc   # Main window text
+	picture = GFX_evt_ship_in_orbit
+	level = 2   # Base level of Scientist
+	risk = 30   # 0-100 percentage risk
+
+	spawn_chance = {
+		modifier = {
+			add = 3
+			uninhabitable_regular_planet = yes
+		}
+	}
+
+	on_success = {
+	}
+
+	on_fail = {
+		ship_event = {
+			id = anomaly_fail.1
+		}
+	}
+
+	on_critical_fail = {
+		ship_event = {
+			id = anomaly_fail.2
+		}
+	}
+}

@@ -1,0 +1,32 @@
+l_english:
+
+########################################################
+##### Written by Elinari for the IKAME Project Mod #####
+########################################################
+
+#TEMPLATE
+#youranomalyhere_category: "Name of beginning event"
+#youranomalyhere_category_desc: "Desc of beginning event"
+#youranomalyhere.1.name: "Name of event"
+#youranomalyhere.1.desc: "Desc of event"
+#youranomalyhere.1.a: "first answer"
+#youranomalyhere.1.b: "second answer"
+
+##############################
+# Anomaly Events
+##############################
+
+meet_boss:0 "Strange Broadcast"
+meet_boss_desc:0 "A closed broadcast is coming from a ship in orbit.\n\n The ship hull bears an unfamiliar corporate insignia, but does not appear to be hostile."
+ikame_project.1.name:0 "Suddenly, Scientist"
+ikame_project.1.desc:0 "An exploration vessel hails you. §B"Greetings! I don't suppose you've seen an unfamiliar battleship with two shield on your travels?"§!"
+ikame_project.1.a:0 "No, sorry."
+ikame_project.1.b:0 "Actually..."
+ikame_project.1.c:0 "Why are you so interested in it?"
+
+##############################
+# Anomaly Fail Events
+##############################
+
+anomaly_fail.1.desc:0 "No matter which channel you try to tune to, the broadcast just doesn't come through clearly enough to be heard."
+anomaly_fail.2.desc:0 "A loud screeching sounds throughout the ship. You turn it off before your aural orifices start to bleed."

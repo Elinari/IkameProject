@@ -1,0 +1,42 @@
+########################################################
+##### Written by Elinari for the IKAME Project Mod #####
+########################################################
+
+# IKAME Project Anomaly Event
+namespace = ikame_project
+
+ship_event = {
+	id = ikame_project.1
+	title = ikame_project.1.name   # Localization - Event window title
+	desc = ikame_project.1.desc   # Localization - Event window text
+	picture = GFX_evt_ship_in_orbit
+	show_sound = event_ship_bridge
+	location = root   # Where the Go To button will take the camera - in this case, to the science ship
+
+	is_triggered_only = yes   # Anomalies are triggered by categories, not Mean Time To Happen
+
+	immediate = {
+		owner = { country_event = { id = story.5 days = 30 } }
+	}
+
+	option = {
+		name = ikame_project.1.a
+		leader = {
+			add_experience = 50
+		}
+	}
+
+	option = {
+		name = ikame_project.1.b
+		leader = {
+			add_experience = 50
+		}
+	}
+
+	option = {
+		name = ikame_project.1.c
+		leader = {
+			add_experience = 100
+		}
+	} 
+}

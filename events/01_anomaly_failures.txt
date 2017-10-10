@@ -1,0 +1,37 @@
+########################################################
+##### Written by Elinari for the IKAME Project Mod #####
+########################################################
+
+namespace = anomaly_fail
+
+# Meet The Boss - Fail
+ship_event = {
+	id = anomaly_fail.1
+	title = "DISC_FAILURE"
+	desc = anomaly_fail.1.desc
+	picture = GFX_evt_ship_in_orbit
+	show_sound = event_alien_signal
+	location = FROM
+
+	is_triggered_only = yes
+
+	option = {
+		name = "CURSES"
+	}
+}
+
+# Meet The Boss - Critical Fail
+ship_event = {
+	id = anomaly_fail.2
+	title = "DISC_FAILURE"
+	desc = anomaly_fail.2.desc
+	picture = GFX_evt_psionics
+	show_sound = event_alien_signal_05
+	location = FROM
+
+	is_triggered_only = yes
+
+	option = {
+		name = "GODDAMNIT"
+	}
+}

@@ -1,0 +1,15 @@
+########################################################
+##### Written by Elinari for the IKAME Project Mod #####
+########################################################
+
+#Meet The Boss Anomaly
+anomaly = {
+	event = ikame_project.1
+	category = meet_boss
+
+	weight = 1   # Weight relative to other anomalies in category
+
+	potential = {
+		always = yes   # Will always be an allowed outcome of meet_boss
+	}
+}
