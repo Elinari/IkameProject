@@ -1,0 +1,72 @@
+########################################################
+##### Written by Elinari for the IKAME Project Mod #####
+########################################################
+
+namespace = ikame_events
+
+#Interstellar Press start
+country_event = {
+	id = ikame_events.1
+	title = ikame_events.1.name
+	desc = ikame_events.1.desc
+	picture = GFX_evt_ship_in_orbit
+	show_sound = event_conversation
+	location = ROOT
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+	}
+
+	mean_time_to_happen = {
+		months = 14
+	}
+
+	immediate = {
+		set_country_flag = spacepress_broadcast
+	}
+
+	option = {
+		name = ikame_events.1.a
+		remove_country_flag = spacepress_broadcast
+	}
+	option = {
+		name = ikame_events.1.b	
+		add_influence = 20	
+	}
+}
+
+
+#Interstellar Press 2
+country_event = {
+	id = ikame_events.2
+	title = ikame_events.2.name
+	desc = ikame_events.2.desc
+	picture = GFX_evt_ship_in_orbit
+	show_sound = event_conversation
+	location = ROOT
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { has_country_flag = spacepress_broadcast }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = ikame_events.2.a
+		remove_country_flag = spacepress_broadcast
+	}
+	option = {
+		name = ikame_events.2.b
+		add_influence = 20
+	}
+}
