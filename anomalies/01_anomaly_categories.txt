@@ -2,7 +2,7 @@
 ##### Written by Elinari for the IKAME Project Mod #####
 ########################################################
 
-#IKAME Category
+#Meet The Boss
 anomaly_category = {
 	
 	key = meet_boss   # Title loc 
