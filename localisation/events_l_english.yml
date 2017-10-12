@@ -13,10 +13,17 @@ l_english:
 meet_boss:0 "Strange Broadcast"
 meet_boss_desc:0 "A closed broadcast is coming from a ship in orbit.\n\n The ship hull bears an unfamiliar corporate insignia, but does not appear to be hostile."
 ikame_project.1.name:0 "Suddenly, Scientist"
-ikame_project.1.desc:0 "An exploration vessel hails you. §B"Greetings! I don't suppose you've seen an unfamiliar battleship with two shield on your travels?"§!"
+ikame_project.1.desc:0 "An exploration vessel hails you. §B"Greetings! I don't suppose you've seen an unfamiliar battleship with two shields on your travels?"§!"
 ikame_project.1.a:0 "No, sorry."
 ikame_project.1.b:0 "Actually..."
 ikame_project.1.c:0 "Why are you so interested in it?"
+
+left_behind:0 "Just Sitting There"
+left_behind_desc:0 "A ship is sitting with its engines cold. When you appear on their scanners, they try to send a message."
+ikame_project.2.name:0 "Those Left Behind"
+ikame_project.2.desc:0 "§B"This is a bit embarassing... I was meant to rendezvous with my commander in this system, but I think I might be a bit late. Have you come across his ship?"§!"
+ikame_project.2.a:0 "We did, but he's long gone now."
+ikame_project.2.b:0 "Sorry, haven't seen anyone else."
 
 ##############################
 # Anomaly Fail Events
@@ -24,6 +31,8 @@ ikame_project.1.c:0 "Why are you so interested in it?"
 
 anomaly_fail.1.desc:0 "No matter which channel you try to tune to, the broadcast just doesn't come through clearly enough to be heard."
 anomaly_fail.2.desc:0 "A loud screeching sounds throughout the ship. You turn it off before your aural orifices start to bleed."
+
+anomaly_fail.3.desc:0 "The ship suddenly fires up its engines and warps away. Maybe it thought you were going to attack it?"
 
 ##############################
 # Events
@@ -34,7 +43,18 @@ ikame_events.1.desc:0 "Word is going round of a new news broadcast channel going
 ikame_events.1.a:0 "We don't need more wild opinions around here!"
 ikame_events.1.b:0 "Interesting, let's see how it goes."
 
-ikame_events.2.name:0 "Interstellar Press - Episode 2"
+ikame_events.2.name:0 "Interstellar Press - Episode 1"
 ikame_events.2.desc:0 "Time for another installment from the IP News Team - reporting live from a silent auction for strange artifacts that have no known purpose or use. Hundreds of potential buyers are present, quarrelling and fawning over a set of seemingly innocuous crystalline rocks. \n\n The bids go from millions to billions in just a few minutes."
 ikame_events.2.a:0 "More money than sense. Turn it off!"
-ikame_events.2.b:0 "Maybe we shouldn't throw away all the junk we find out there..."
+ikame_events.2.b:0 "So people will buy any old space junk? Hmm..."
+
+ikame_events.3.name:0 "Interstellar Press - Episode 2"
+ikame_events.3.desc:0 "Today the news is all about the lavish parties thrown by an otherwise hyper-zealous empire, following the recent coronation of a new ruler.\n\n Considering the other contenders to the throne died in the literal 'Battle Royale' mandated by the Empire's succession laws, the parties are surprisingly jovial."
+ikame_events.3.a:0 "I don't want to hear any more of this rubbish."
+ikame_events.3.b:0 "You learn something new every day!"
+
+ikame_events.4.name:0 "Interstellar Press - Episode 3"
+ikame_events.4.desc:0 "The scientists of the nation are glued to their visual receivers for today's IP News episode. Full of long science-y words from people with even longer science-y job titles, it seems to be concerning breakthroughs in exoplanet detection methods and classifications. \n\n Whatever that means."
+ikame_events.4.a:0 "Information overload. Enough."
+ikame_events.4.b:0 "Intriguing! I think..."
+

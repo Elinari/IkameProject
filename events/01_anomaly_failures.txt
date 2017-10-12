@@ -35,3 +35,19 @@ ship_event = {
 		name = "GODDAMNIT"
 	}
 }
+
+# Those Left Behind - Critical Fail
+ship_event = {
+	id = anomaly_fail.3
+	title = "DISC_FAILURE"
+	desc = anomaly_fail.3.desc
+	picture = GFX_evt_ship_in_orbit
+	show_sound = event_sensor_ping
+	location = FROM
+
+	is_triggered_only = yes
+
+	option = {
+		name = "CURSES"
+	}
+}

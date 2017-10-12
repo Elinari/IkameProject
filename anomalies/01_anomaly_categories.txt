@@ -9,7 +9,7 @@ anomaly_category = {
 	desc = meet_boss_desc   # Main window text
 	picture = GFX_evt_ship_in_orbit
 	level = 2   # Base level of Scientist
-	risk = 30   # 0-100 percentage risk
+	risk = 20   # 0-100 percentage risk
 
 	spawn_chance = {
 		modifier = {
@@ -18,7 +18,12 @@ anomaly_category = {
 		}
 	}
 
+	on_spawn = {
+		owner = { set_country_flag = met_boss }
+	}
+
 	on_success = {
+	
 	}
 
 	on_fail = {
@@ -30,6 +35,43 @@ anomaly_category = {
 	on_critical_fail = {
 		ship_event = {
 			id = anomaly_fail.2
+		}
+	}
+}
+
+Those Left Behind
+anomaly_category = {
+	
+	key = left_behind
+	desc = left_behind_desc
+	picture = GFX_evt_ship_in_orbit
+	level = 2
+	risk = 30
+
+	spawn_chance = {
+		modifier = {
+			add = 3
+			is_asteroid = yes
+		}
+		modifier = {
+			from.owner = { has_country_flag = met_boss }
+			add = 5
+		}
+	}
+
+	on_success = {
+
+	}
+
+	on_fail = {
+		ship_event = {
+			id = anomaly_fail.1
+		}
+	}
+
+	on_critical_fail = {
+		ship_event = {
+			id = anomaly_fail.3
 		}
 	}
 }

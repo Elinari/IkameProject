@@ -13,3 +13,15 @@ anomaly = {
 		always = yes   # Will always be an allowed outcome of meet_boss
 	}
 }
+
+#Those Left Behind Anomaly
+anomaly = {
+	event = ikame_project.2
+	category = left_behind
+
+	weight = 1
+
+	potential = {
+		always = yes
+	}
+}

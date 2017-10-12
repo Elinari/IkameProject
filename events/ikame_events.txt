@@ -4,12 +4,12 @@
 
 namespace = ikame_events
 
-#Interstellar Press start
+#Interstellar Press Pilot
 country_event = {
 	id = ikame_events.1
 	title = ikame_events.1.name
 	desc = ikame_events.1.desc
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_news_room
 	show_sound = event_conversation
 	location = ROOT
 
@@ -24,7 +24,7 @@ country_event = {
 	}
 
 	immediate = {
-		set_country_flag = spacepress_broadcast
+		owner = { set_country_flag = spacepress_broadcast }
 	}
 
 	option = {
@@ -38,12 +38,12 @@ country_event = {
 }
 
 
-#Interstellar Press 2
+#Interstellar Press 1
 country_event = {
 	id = ikame_events.2
 	title = ikame_events.2.name
 	desc = ikame_events.2.desc
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_news_room
 	show_sound = event_conversation
 	location = ROOT
 
@@ -67,6 +67,72 @@ country_event = {
 	}
 	option = {
 		name = ikame_events.2.b
+		add_influence = 20
+	}
+}
+
+#Interstellar Press 2
+country_event = {
+	id = ikame_events.3
+	title = ikame_events.3.name
+	desc = ikame_events.3.desc
+	picture = GFX_evt_news_room
+	show_sound = event_conversation
+	location = ROOT
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { has_country_flag = spacepress_broadcast }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = ikame_events.3.a
+		remove_country_flag = spacepress_broadcast
+	}
+	option = {
+		name = ikame_events.3.b
+		add_influence = 20
+	}
+}
+
+#Interstellar Press 3
+country_event = {
+	id = ikame_events.4
+	title = ikame_events.4.name
+	desc = ikame_events.4.desc
+	picture = GFX_evt_news_room
+	show_sound = event_conversation
+	location = ROOT
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { has_country_flag = spacepress_broadcast }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = ikame_events.4.a
+		remove_country_flag = spacepress_broadcast
+	}
+	option = {
+		name = ikame_events.4.b
 		add_influence = 20
 	}
 }
