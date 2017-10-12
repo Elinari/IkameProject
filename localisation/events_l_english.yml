@@ -1,16 +1,10 @@
 l_english:
 
+#REMEMBER - This doesn't actually work as a standalone file. Just add these to the end of the defualt events_l_english loc file
+
 ########################################################
 ##### Written by Elinari for the IKAME Project Mod #####
 ########################################################
-
-#TEMPLATE
-#youranomalyhere_category: "Name of beginning event"
-#youranomalyhere_category_desc: "Desc of beginning event"
-#youranomalyhere.1.name: "Name of event"
-#youranomalyhere.1.desc: "Desc of event"
-#youranomalyhere.1.a: "first answer"
-#youranomalyhere.1.b: "second answer"
 
 ##############################
 # Anomaly Events
@@ -30,3 +24,17 @@ ikame_project.1.c:0 "Why are you so interested in it?"
 
 anomaly_fail.1.desc:0 "No matter which channel you try to tune to, the broadcast just doesn't come through clearly enough to be heard."
 anomaly_fail.2.desc:0 "A loud screeching sounds throughout the ship. You turn it off before your aural orifices start to bleed."
+
+##############################
+# Events
+##############################
+
+ikame_events.1.name:0 "Interstellar Press - Pilot"
+ikame_events.1.desc:0 "Word is going round of a new news broadcast channel going live today - will it cover the same doom and gloom as the others, or take an edgier popular-culture route? \n\n Their pilot episode is set to cover the recent trend in mind-controlled board games, and a feature on superstructures and their potential."
+ikame_events.1.a:0 "We don't need more wild opinions around here!"
+ikame_events.1.b:0 "Interesting, let's see how it goes."
+
+ikame_events.2.name:0 "Interstellar Press - Episode 2"
+ikame_events.2.desc:0 "Time for another installment from the IP News Team - reporting live from a silent auction for strange artifacts that have no known purpose or use. Hundreds of potential buyers are present, quarrelling and fawning over a set of seemingly innocuous crystalline rocks. \n\n The bids go from millions to billions in just a few minutes."
+ikame_events.2.a:0 "More money than sense. Turn it off!"
+ikame_events.2.b:0 "Maybe we shouldn't throw away all the junk we find out there..."
